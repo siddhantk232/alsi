@@ -5,4 +5,4 @@ set -ex
 LIBS=`pkg-config --libs "sdl2, SDL2_image"`
 CFLAGS=`pkg-config --cflags "sdl2, SDL2_image"`
 
-gcc -Wall -Wextra -Wpedantic -ggdb -o main main.c
+gcc $CFLAGS $LIBS -Wall -Wextra -Wpedantic -ggdb -o main main.c
